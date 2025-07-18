@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikl Portfolio</title>
+    <!-- Official Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        accent: '#f472b6',
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 via-white to-pink-50 text-gray-900">
+    <!-- Sticky Navbar -->
+    <nav class="sticky top-0 bg-white shadow z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="font-bold text-xl">Rikl</div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-500 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500 transition">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-500 transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-50 to-white">
+        <img src="assets/profile.jpg" alt="Profile" class="w-32 h-32 rounded-full shadow-lg mb-6 animate-fade-in">
+        <h1 class="text-4xl font-bold mb-2">Hi, I'm Rikl</h1>
+        <p class="text-lg mb-6">Web Developer & Designer</p>
+        <a href="#contact"
+            class="bg-blue-500 text-white px-6 py-2 rounded-full shadow hover:bg-blue-600 transition">Contact Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="mb-6">I'm a passionate web developer with experience in building modern, responsive websites. I
+                love working with new technologies and creating beautiful user experiences.</p>
+            <div class="flex flex-wrap gap-4">
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">HTML</span>
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-semibold">CSS</span>
+                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">JavaScript</span>
+                <span
+                    class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">TailwindCSS</span>
+                <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-semibold">React</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card Example -->
+                <div class="bg-white rounded-lg shadow p-6 flex flex-col animate-fade-in">
+                    <img src="assets/project1.jpg" alt="Project 1" class="rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">frierenchatbot</h3>
+                    <p class="mb-4">An interactive chatbot powered by JavaScript and PHP, styled with TailwindCSS.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://frierenv2.rf.gd/" target="_blank"
+                            class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition">Live
+                            Demo</a>
+                        <a href="https://github.com/dexpie/frierenchatbot" target="_blank"
+                            class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6 flex flex-col animate-fade-in">
+                    <img src="assets/project2.jpg" alt="Project 2" class="rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">wajik-anime-api</h3>
+                    <p class="mb-4">A TypeScript-based anime API. (Add your own description)</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank"
+                            class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition">Live Demo</a>
+                        <a href="https://github.com/dexpie/wajik-anime-api" target="_blank"
+                            class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6 flex flex-col animate-fade-in">
+                    <img src="assets/project3.jpg" alt="Project 3" class="rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">dexanime</h3>
+                    <p class="mb-4">Anime site project. (Add your own description)</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank"
+                            class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition">Live Demo</a>
+                        <a href="https://github.com/dexpie/dexanime" target="_blank"
+                            class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6 flex flex-col animate-fade-in">
+                    <img src="assets/project5.jpg" alt="Project 5" class="rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">webcwikai</h3>
+                    <p class="mb-4">A CSS-based web project. (Add your own description)</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank"
+                            class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition">Live Demo</a>
+                        <a href="https://github.com/dexpie/webcwikai" target="_blank"
+                            class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6 flex flex-col animate-fade-in">
+                    <img src="assets/project6.jpg" alt="Project 6" class="rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">sarmintong</h3>
+                    <p class="mb-4">A JavaScript project. (Add your own description)</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank"
+                            class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition">Live Demo</a>
+                        <a href="https://github.com/dexpie/sarmintong" target="_blank"
+                            class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6 flex flex-col animate-fade-in">
+                    <img src="assets/project8.jpg" alt="Project 8" class="rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">valencwi</h3>
+                    <p class="mb-4">Prototype iseng. (Add your own description)</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank"
+                            class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition">Live Demo</a>
+                        <a href="https://github.com/dexpie/valencwi" target="_blank"
+                            class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6 flex flex-col animate-fade-in">
+                    <img src="assets/project10.jpg" alt="Project 10" class="rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Coba-aja</h3>
+                    <p class="mb-4">HTML project. (Add your own description)</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank"
+                            class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition">Live Demo</a>
+                        <a href="https://github.com/dexpie/Coba-aja" target="_blank"
+                            class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6 flex flex-col animate-fade-in">
+                    <img src="assets/project11.jpg" alt="Project 11" class="rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Prototype-1-Valentine</h3>
+                    <p class="mb-4">Valentine prototype. (Add your own description)</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank"
+                            class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition">Live Demo</a>
+                        <a href="https://github.com/dexpie/Prototype-1-Valentine" target="_blank"
+                            class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6 flex flex-col animate-fade-in">
+                    <img src="assets/eduquest.jpg" alt="EduQuest" class="rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">EduQuest</h3>
+                    <p class="mb-4">A web-based educational platform designed to help users learn and explore various
+                        subjects interactively.</p>
+                    <div class="flex space-x-2">
+                        <a href="#" target="_blank"
+                            class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition">Live Demo</a>
+                        <a href="https://github.com/dexpie/eduquest" target="_blank"
+                            class="bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-900 transition">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">Contact</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST"
+                class="max-w-lg mx-auto flex flex-col gap-4">
+                <input type="text" name="name" placeholder="Name" required class="border rounded px-4 py-2">
+                <input type="email" name="email" placeholder="Email" required class="border rounded px-4 py-2">
+                <textarea name="message" placeholder="Message" required class="border rounded px-4 py-2"></textarea>
+                <button type="submit"
+                    class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition">Send</button>
+            </form>
+            <div class="flex justify-center space-x-4 mt-6">
+                <a href="#" class="text-blue-500 hover:text-blue-700"><svg width="24" height="24"
+                        fill="currentColor"><!-- Twitter SVG --></svg></a>
+                <a href="#" class="text-gray-800 hover:text-gray-900"><svg width="24" height="24"
+                        fill="currentColor"><!-- GitHub SVG --></svg></a>
+                <a href="#" class="text-pink-500 hover:text-pink-700"><svg width="24" height="24"
+                        fill="currentColor"><!-- Instagram SVG --></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 mt-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm">&copy; 2025 Dexpie. All rights reserved.</p>
+            <div class="flex space-x-4 mt-2 md:mt-0 items-center">
+                <a href="#home" class="hover:text-blue-500">Home</a>
+                <a href="#about" class="hover:text-blue-500">About</a>
+                <a href="#projects" class="hover:text-blue-500">Projects</a>
+                <a href="#contact" class="hover:text-blue-500">Contact</a>
+                <!-- GitHub Icon Link -->
+                <a href="https://github.com/dexpie" target="_blank" rel="noopener" class="hover:text-gray-900"
+                    title="GitHub">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"
+                        class="inline-block align-middle">
+                        <path
+                            d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .268.18.579.688.481C19.138 20.175 22 16.427 22 12.012 22 6.484 17.523 2 12 2z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
